@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head>     
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>About Us</title>
         <link rel="stylesheet" href="abt.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     </head>
     <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo"><a href="#">SHOP NOW</a></div>
+                <a class="togglebtn" href="#"><span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span></a>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="HomePage.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#ft">Contact</a></li>
+                    </ul>
+                </div>
+                <script>
+                    const toggleBtn = document.getElementsByClassName('togglebtn')[0]
+                    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+                    toggleBtn.addEventListener('click', () => {
+                   navbarLinks.classList.toggle('active')
+                })
+                </script>
+            </nav>
+        </header>
         <h1><span class="text_1">About Us-Change Desire into Reality</span><span class="text_2">Home Appliances & Furnitures</span></h1>
         <section>
             <img src="ab.png">
@@ -12,5 +38,46 @@
                 Our designs range from traditional to contemporary and as we use vast range of suppliers we can offer a solution to fit any space in your home. All of our solutions are fitted with soft closing systems to offer extra durability to your furniture.Our service includes a free home visit to allow us to visualise what you require. Using our experience we can tailor a bespoke design to fit your home. We will bring brochures and samples of the products we use to allow you to see the quality for yourself. A full survey is carried out on your room and a CAD design will be sent through with our no obligation quotation so you can see what the end result will look like before you buy.
             </p>
         </section>
+        <footer class="footer" id="ft">
+            <div class="container">
+              <div class="row">
+                <div class="footer-col">
+                  <h4>company</h4>
+                  <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>get help</h4>
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>online shop</h4>
+                  <ul>
+                    <li><a href="#">Furnitures</a></li>
+                    <li><a href="#">Home Appliances</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
     </body>
 </html>
