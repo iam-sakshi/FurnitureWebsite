@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Home Page</title>     
+  <meta charset="utf-8">
+        <meta http-equiv="Refresh" content="2; url=public/index.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo"><a href="#">SHOP NOW</a></div>
+                <a class="togglebtn" href="#"><span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span></a>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#ft">Contact</a></li>
+                    </ul>
+                </div>
+                <script>
+                    const toggleBtn = document.getElementsByClassName('togglebtn')[0]
+                    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+                    toggleBtn.addEventListener('click', () => {
+                   navbarLinks.classList.toggle('active')
+                })
+                </script>
+            </nav>
+        </header>
+        <section class="home">
+            <div class="slider">
+               <div class="slide active" style="background-image: url('how-to-clean-your-sofa-on-a-budget-136407098522602601-160701113338.jpg')">
+                   <div class="container">
+                       <div class="caption">
+                        <div class="section-heading shm-none">
+                          <div class="section-subheading">BEAUTIFY your Place</div>                        
+                            <h1>Furnitures</h1>                        
+
+                            <p class="section-desc"> Choose The Best For YOU</p>                            </div>
+                            <a class="btn" href="#">About Us<span></span></a>
+                            <a class="btn" href="#">Shop NOW<span></span></a>
+                       </div>
+                   </div>
+               </div>
+               <div class="slide" style="background-image: url('Your-Furniture-in-Tip-Top-Shape.jpg')">
+                   <div class="container">
+                       <div class="caption">
+                        <div class="section-heading shm-none">
+                          <div class="section-subheading">Make Your Work EASY</div>                          
+                                <h2>Home Appliances</h2>                      
+                              <p class="section-desc"> Give Yourself Comfort of NEW home Appliances </p>                            </div>
+                              <a class="btn" href="#">About Us<span></span></a>
+                                <a class="btn" href="#">Shop NOW<span></span></a>            </div>
+                   </div>
+               </div>
+            </div>
+           <div class="controls">
+               <div class="prev"></div>
+               <div class="next"></div>
+           </div>
+          </section>
+           <script src="Script.js"></script>
+           <div class="cont-2">
+            <img src="new.jpg" id="bg">
+            <h1>Turn Your Desire Into Reality</h1>
+            <img src="unnamed.jpg" class="i1">
+            <img src="photo-1524758631624-e2822e304c36.jpg" class="i2">
+        </div>
+        <footer class="footer" id="ft">
+            <div class="container">
+              <div class="row">
+                <div class="footer-col">
+                  <h4>company</h4>
+                  <ul>
+                    <li><a href="About.html">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>get help</h4>
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>online shop</h4>
+                  <ul>
+                    <li><a href="#">Furnitures</a></li>
+                    <li><a href="#">Home Appliances</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+    </body>
+</html>
