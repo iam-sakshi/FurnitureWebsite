@@ -1,0 +1,102 @@
+body{
+    height: 100%;
+    background: linear-gradient(90deg, #FFC0CB 10%, #FFDD67 100%);
+    font-family: Georgia, serif;
+}
+
+section{
+    display: flex;
+}
+section p{
+  text-align: center;
+  margin-right: 5%;
+  padding-top: 20px;
+  line-height: 1.5;
+  font-size: 100%;
+}
+
+section img{
+    width: 220% ;
+    height: 250%;
+    margin-left: 5%;
+}
+h1{
+    display: flex !important;
+    margin-top: 20px;
+    margin-left: 40%;
+    padding-bottom: 10px;
+}
+  .text_1 {
+    animation: text1;
+  }
+  
+  .text_2 {
+    animation: text2;
+  }
+  
+  .text_1, .text_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    position: relative;
+    animation-duration: 20s;
+    animation-timing-function: steps(40,end);
+    animation-iteration-count: infinite;
+  }
+  
+  .text_1::after, .text_2::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+  }
+  
+  @keyframes text2 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+      width: 17.2em;
+    }
+  }
+  
+  @keyframes text1 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    10%, 40% {
+      width: 20em;
+    }
+  }
+  
+  @keyframes caret {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+@media(max-width: 1000px) {
+    h1{
+        margin-left: 20%;
+        font-size: 120%;
+    }     
+  }
+@media(max-width: 900px){
+    img{
+        width:80%!important;
+        height:70% !important;
+    }
+   section p{
+       margin-top: auto;
+       display:  block !important;
+       overflow: visible !important;
+    }
+    section{
+        display:block;
+    }
+}
